@@ -10,6 +10,7 @@ using CustomUtil;
 /// <summary>
 /// BeginConnectServer:连接服务器;
 /// DisconnectServer:客户端主动断开连接;
+/// Disconnected:客户端被动断开连接;
 /// SendSockMsg:主线程阻塞发送请求;
 /// GetRecvMsg:获取发送数据填充BitMemStream，提高复用性;
 /// </summary>
@@ -244,7 +245,7 @@ namespace CustomNetwork
         /// <param name="hostname"></param>
         /// <param name="port"></param>
         /// <param name="quiet">连接失败，是否需要调用回调</param>
-        public bool BeginConnectServer(string hostname, Int32 port, bool quiet = false)
+        public bool BeginConnectServer(string hostname, int port, bool quiet = false)
 		{
 			try
 			{
