@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -11,13 +11,15 @@
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
-    <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile></CompilerResponseFile>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <CompilerResponseFile>Assets\smcs.rsp</CompilerResponseFile>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>Android:13</UnityBuildTarget>
     <UnityVersion>5.3.3f1</UnityVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <LangVersion Condition=" '$(VisualStudioVersion)' != '10.0' ">4</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -27,8 +29,9 @@
     <IntermediateOutputPath>Temp\UnityVS_obj\Debug\</IntermediateOutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DefineConstants>DEBUG;TRACE;UNITY_5_3_3;UNITY_5_3;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_SPRITE_POLYGON;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;ENABLE_EDITOR_TESTS_RUNNER;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_SUBSTANCE;UNITY_ANDROID_API;ENABLE_TEXTUREID_MAP;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_LOG_MIXED_STACKTRACE;ENABLE_UNITYWEBREQUEST;PLATFORM_SUPPORTS_ADS_ID;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN</DefineConstants>
-    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_3;UNITY_5_3;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_SPRITE_POLYGON;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;ENABLE_EDITOR_TESTS_RUNNER;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_SUBSTANCE;UNITY_ANDROID_API;ENABLE_TEXTUREID_MAP;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_LOG_MIXED_STACKTRACE;ENABLE_UNITYWEBREQUEST;PLATFORM_SUPPORTS_ADS_ID;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -37,8 +40,9 @@
     <IntermediateOutputPath>Temp\UnityVS_obj\Release\</IntermediateOutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DefineConstants>TRACE;UNITY_5_3_3;UNITY_5_3;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_SPRITE_POLYGON;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;ENABLE_EDITOR_TESTS_RUNNER;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_SUBSTANCE;UNITY_ANDROID_API;ENABLE_TEXTUREID_MAP;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_LOG_MIXED_STACKTRACE;ENABLE_UNITYWEBREQUEST;PLATFORM_SUPPORTS_ADS_ID;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN</DefineConstants>
-    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <DefineConstants>TRACE;UNITY_5_3_3;UNITY_5_3;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_SPRITE_POLYGON;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;ENABLE_EDITOR_TESTS_RUNNER;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_SUBSTANCE;UNITY_ANDROID_API;ENABLE_TEXTUREID_MAP;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_LOG_MIXED_STACKTRACE;ENABLE_UNITYWEBREQUEST;PLATFORM_SUPPORTS_ADS_ID;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />
@@ -201,6 +205,101 @@
     <Compile Include="Assets\NGUI\Scripts\UI\UITexture.cs" />
     <Compile Include="Assets\NGUI\Scripts\UI\UITooltip.cs" />
     <Compile Include="Assets\NGUI\Scripts\UI\UIViewport.cs" />
+    <Compile Include="Assets\Tools\LinesGenerate.cs" />
+    <Compile Include="Assets\client_code\Common\CommonUtil.cs" />
+    <Compile Include="Assets\client_code\Common\IManagerProtocal.cs" />
+    <Compile Include="Assets\client_code\Common\NetworkUtil.cs" />
+    <Compile Include="Assets\client_code\Common\Singleton.cs" />
+    <Compile Include="Assets\client_code\Common\UnityCustomUtil.cs" />
+    <Compile Include="Assets\client_code\GameStart.cs" />
+    <Compile Include="Assets\client_code\Logic\CreatRoom\CreatRoomClient.cs" />
+    <Compile Include="Assets\client_code\Logic\CreatRoom\CreatRoomServer.cs" />
+    <Compile Include="Assets\client_code\Logic\NetManager\BitMemStream.cs" />
+    <Compile Include="Assets\client_code\Logic\NetManager\BitSet.cs" />
+    <Compile Include="Assets\client_code\Logic\NetManager\IStream.cs" />
+    <Compile Include="Assets\client_code\Logic\NetManager\MemStream.cs" />
+    <Compile Include="Assets\client_code\Logic\NetManager\NetState.cs" />
+    <Compile Include="Assets\client_code\Logic\NetManager\ThreadReviceConnection.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\BclHelpers.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\BufferExtension.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\BufferPool.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\CallbackAttributes.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\DataFormat.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\Extensible.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\ExtensibleUtil.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\GlobalSuppressions.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\Helpers.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\IExtensible.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\IExtension.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\ImplicitFields.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\KeyValuePairProxy.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\Meta\AttributeMap.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\Meta\BasicList.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\Meta\CallbackSet.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\Meta\MetaType.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\Meta\RuntimeTypeModel.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\Meta\SubType.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\Meta\TypeFormatEventArgs.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\Meta\TypeModel.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\Meta\ValueMember.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\NetObjectCache.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\PrefixStyle.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\Properties\AssemblyInfo.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\ProtoContractAttribute.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\ProtoConverterAttribute.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\ProtoEnumAttribute.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\ProtoException.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\ProtoIgnoreAttribute.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\ProtoIncludeAttribute.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\ProtoMemberAttribute.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\ProtoReader.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\ProtoWriter.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\SerializationContext.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\Serializer.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\Serializers\ArrayDecorator.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\Serializers\BlobSerializer.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\Serializers\BooleanSerializer.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\Serializers\ByteSerializer.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\Serializers\CharSerializer.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\Serializers\CompiledSerializer.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\Serializers\DateTimeSerializer.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\Serializers\DecimalSerializer.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\Serializers\DefaultValueDecorator.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\Serializers\DoubleSerializer.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\Serializers\EnumSerializer.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\Serializers\FieldDecorator.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\Serializers\GuidSerializer.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\Serializers\IProtoSerializer.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\Serializers\IProtoTypeSerializer.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\Serializers\ISerializerProxy.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\Serializers\ImmutableCollectionDecorator.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\Serializers\Int16Serializer.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\Serializers\Int32Serializer.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\Serializers\Int64Serializer.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\Serializers\KeyValuePairDecorator.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\Serializers\ListDecorator.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\Serializers\MemberSpecifiedDecorator.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\Serializers\NetObjectSerializer.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\Serializers\NullDecorator.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\Serializers\ParseableSerializer.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\Serializers\PropertyDecorator.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\Serializers\ProtoDecoratorBase.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\Serializers\SByteSerializer.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\Serializers\SingleSerializer.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\Serializers\StringSerializer.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\Serializers\SubItemSerializer.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\Serializers\SurrogateSerializer.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\Serializers\SystemTypeSerializer.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\Serializers\TagDecorator.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\Serializers\TimeSpanSerializer.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\Serializers\TupleSerializer.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\Serializers\TypeSerializer.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\Serializers\UInt16Serializer.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\Serializers\UInt32Serializer.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\Serializers\UInt64Serializer.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\Serializers\UriDecorator.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\SubItemToken.cs" />
+    <Compile Include="Assets\client_code\Logic\protobuf-net\WireType.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\NGUI\Examples\Atlases\Fantasy\Fantasy Font - Normal.txt" />

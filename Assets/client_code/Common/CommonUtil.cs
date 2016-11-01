@@ -9,10 +9,11 @@ namespace CustomUtil
 {
     public class CommonUtil
     {
+        #region xml serial
         /// <summary>
         /// 读取xml内容到数据结构;
         /// </summary>
-        
+
         public static T ReadFromXmlString<T>(string xmlString) where T : class
         {
             XmlSerializer x = new XmlSerializer(typeof(T));
@@ -55,6 +56,26 @@ namespace CustomUtil
             {
                 UnityEngine.Debug.LogError(ex.ToString());
             }
+        }
+        #endregion
+
+        /// <summary>
+        /// format string valid check;
+        /// </summary>
+
+        public static bool StringFormatValidCheck(string formatStr, int paramStrLength)
+        {
+            if (paramStrLength == 0 || string.IsNullOrEmpty(formatStr))
+            {
+                return false;
+            }
+
+            int count = System.Text.RegularExpressions.Regex.Matches(formatStr, @"{\d*?}").Count;
+            if (paramStrLength == count)
+            {
+                return true;
+            }
+            return false;
         }
     }
 }
