@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+	support: float\bool\int\string\List<T>\class
+	node name is same to variable name;
+-->
+<ClientConfig>
+  <test>Test !!!</test>
+</ClientConfig>

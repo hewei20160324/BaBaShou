@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using CustomUtil;
+using CustomGame;
 
 public class GameStart : MonoBehaviour {
 
@@ -11,14 +12,14 @@ public class GameStart : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        UnityCustomUtil.CustomLog(NetworkUtil.GetLocalHostName());   
-	
-	}
+        //UnityCustomUtil.CustomLog(NetworkUtil.GetLocalHostName());   
+        GameCore.GetInstance().Init();
+    }
 	
 	// Update is called once per frame
 	void Update () {
-	
-	}
+        GameCore.GetInstance().OnUpdate();
+    }
 
     /// <summary>
 	/// 强制暂停时，先 OnApplicationPause，后 OnApplicationFocus;
@@ -26,7 +27,7 @@ public class GameStart : MonoBehaviour {
 	/// </summary>
 	void OnApplicationFocus(bool isFocus)
     {
-        UnityCustomUtil.CustomLog("OnApplicationFocus === " + isFocus);
+        //UnityCustomUtil.CustomLog("OnApplicationFocus === " + isFocus);
 #if !UNITY_EDITOR
 		if (isFocus)
 		{
@@ -38,13 +39,18 @@ public class GameStart : MonoBehaviour {
 
     void OnApplicationPause(bool isPause)
     {
-        UnityCustomUtil.CustomLog("OnApplicationPause === " + isPause);
+        //UnityCustomUtil.CustomLog("OnApplicationPause === " + isPause);
 #if !UNITY_EDITOR
 		if (isPause)
 		{
 			OnGamePause();
 		}
 #endif
+    }
+
+    void OnApplicationQuit()
+    {
+        //RoomManager.GetInstance().Clear();
     }
 
     /// <summary>
@@ -60,12 +66,6 @@ public class GameStart : MonoBehaviour {
 	/// </summary>
 	void OnGamePause()
     {
-        // 游戏失去焦距时玩家停止移动，避免在边界移动时失去焦点导致穿透空气墙，从而掉落到场景外;
-//         UserEntity userEntity = EntityManager.GetInstance().GetUserEntity();
-//         if (userEntity != null)
-//         {
-//             userEntity.StopMove();
-//         }
 //         GameClient.GetInstance().GetNetManager().SetAdditionalPing(xyjClient.Setting.PauseTimeOut);
     }
 }
